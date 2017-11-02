@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+html, body {
+  height: 100%;
+}
+
+body {
+  max-width: 1060px;
+  margin: 0 auto;
+  font-family: 'Rokkitt', serif;
+  font-size: 120%;
+}
+
+.video-hero {
+  max-height: 178px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: #000;
+}
+@media (min-width: 600px) {
+  .video-hero {
+    max-height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .video-hero {
+    max-height: 380px;
+  }
+}
+.video-hero h1, .video-hero .play, .video-hero .overlay, .video-hero .video {
+  position: absolute;
+}
+.video-hero h1 {
+  top: 10px;
+  text-align: center;
+  z-index: 155;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+}
+.video-hero h1 span {
+  display: block;
+  font-size: 80%;
+  font-weight: 200;
+}
+@media (min-width: 600px) {
+  .video-hero h1 {
+    top: 20px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .video-hero h1 {
+    top: 40px;
+  }
+}
+.video-hero .play {
+  bottom: 10%;
+  left: 50%;
+  margin-left: -35px;
+  z-index: 200;
+  color: #fff;
+  text-decoration: none;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/play-circle.svg");
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+}
+.video-hero .play span {
+  display: inline-block;
+  text-indent: -999em;
+}
+.video-hero .play:hover {
+  opacity: .8;
+}
+@media (min-width: 600px) {
+  .video-hero .play {
+    bottom: 12%;
+  }
+}
+@media (min-width: 768px) {
+  .video-hero .play {
+    bottom: 20%;
+  }
+}
+.video-hero .vid-cap {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  position: relative;
+}
+.video-hero .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+}
+.video-hero .video {
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.sub-hero {
+  padding: 0 1em;
+  margin-bottom: 100px;
+}
+.sub-hero h2 {
+  font-size: 30px;
+}

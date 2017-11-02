@@ -1,0 +1,17 @@
+#videosList {
+	max-width: 600px;
+	overflow: hidden;
+}
+
+.video {
+	background-image:
+		url('http://image.dmcmedia.co.kr/dmcmedia/imgurl/i1436165690912.jpg');
+	height: 100%;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+	display: none !important;
+}

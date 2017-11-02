@@ -1,0 +1,4 @@
+<cross-domain-policy>
+<allow-access-from domain="http://demo.tremorvideo.com/proddev/vast/vast2RegularLinear.xml" secure="false"></allow-access-from>
+<allow-http-request-headers-from domain="http://demo.tremorvideo.com/proddev/vast/vast2RegularLinear.xml" headers="*" secure="false"></allow-http-request-headers-from>
+</cross-domain-policy>
